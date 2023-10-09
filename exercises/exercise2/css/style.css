@@ -1,0 +1,23 @@
+.box-model {
+  background-color: gray;
+  display: flow-root;
+}
+
+.box-model p {
+  display: block;
+  border: 5px solid black;
+  margin: 40px;
+  padding: 40px;
+  background-color: pink;
+}
+
+section.centering {
+  width: 300px;
+  margin: 0 auto;
+  background-color: lightgreen;
+  padding: 20px;
+}
+
+body {
+  background-color: lightblue;
+}

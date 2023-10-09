@@ -1,0 +1,70 @@
+.box {
+  padding: 20px;
+}
+
+#top {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 821px;
+  background-color: orange;
+  object-fit: cover; 
+}
+
+.bottom {
+  width: 100%;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#name1 {
+  font-size: 96px;
+  width: 562px;
+  font-family: "Sansita One";
+  color: white;
+}
+
+#name2 {
+  font-size: 64px;
+  width: 476px;
+  font-family: "Sansita One";
+  color: #72D7E7;
+}
+
+#homepageHeaderText {
+  font-size: 22;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #035A8B;
+}
+
+#homepageText {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+  min-height: 64px;
+  background-color: #035A8B;
+}
+
+footer {
+  min-height: 150px;
+  background-color: #035A8B;
+}
