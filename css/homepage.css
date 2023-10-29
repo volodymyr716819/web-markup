@@ -261,7 +261,7 @@
     display: none;
   }
 
-  /* Cookie message styles */
+  /* Cookie message styles (mobile) */
 
   #cookie-message {
     position: fixed;

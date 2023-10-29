@@ -258,6 +258,8 @@
     width: 100%;
   }
 
+  /* Cookie message styles (mobile) */
+
   #cookie-message {
     position: fixed;
     background-color: #f9edbe;

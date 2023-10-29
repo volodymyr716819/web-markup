@@ -309,6 +309,8 @@
     flex-direction: column;
   }
 
+  /* Cookie message styles (mobile) */
+
   #cookie-message {
     position: fixed;
     background-color: #f9edbe;
