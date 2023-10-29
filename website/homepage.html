@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Volodymyr Gulchenko" />
+  <title>Homepage</title>
+  <link rel="stylesheet" type="text/css" href="./css/homepage.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sansita">
+  <link rel="icon" type="image/x-icon" href="img/favicon.png" >
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="homepage.html" class="home-link">HOME</a></li>
+        <li><a href="lessons.html" class="lessons-link">LESSONS</a></li>
+        <li><a href="rental.html" class="rental-link">RENTAL</a></li>
+        <li><a href="opening_hours.html" class="opening_hours-link">OPENING HOURS</a></li>
+        <li><a href="contact_us.html" class="contact_us-link">CONTACT US</a></li>
+        <li><a href="tips.html" class="tips-link">TIPS</a></li>
+        <li><a href="faq.html" class="faq-link">FAQ</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section>
+    <article class="box top">
+      <figure>
+        <h1 class="homepage"><img src="img/home_page.jpg" id="topimg" alt="Banner Image" class="homepage-image"
+            title="Banner Image"></h1>
+        <figcaption id="imageCaption">This is a banner image</figcaption>
+      </figure>
+      <h1 class="homepage_mobile"><img src="img/home_page_mobile.jpg" id="topimgMobile" alt="Mobile Banner Image"
+          class="homepage-image" title="Mobile Banner Image"></h1>
+    </article>
+
+    <aside>
+      <article class="box bottom">
+        <h2 class="homepageHeaderText">Our lessons</h2>
+        <p class="homepageText">You want to learn how to surf or you are dreaming to try kitesurfing, but you do not
+          know
+          where to start? Our friendly instructors will happily help you to catch the first wave! You can get to know
+          more about our lessons on our <a href="lessons.html" class="text-link">Lessons</a> page.</p>
+
+        <h2 class="homepageHeaderText">Rental</h2>
+        <p class="homepageText">If you are new in surfing or kitesurfing, most probably you do not have your own
+          equipment
+          to start. We are happy to help you with this! We propose wide range of boards, wetsuits and other stuff which
+          will help you to enjoy ocean. To get to know more, visit our <a href="rental.html"
+            class="text-link">Rental</a> page.</p>
+
+        <h2 class="homepageHeaderText">Opening hours</h2>
+        <p class="homepageText">We want to be sure that you will not miss the best wave of the day! That's why we are
+          open
+          seven days a week and even more on your request. To see our opening times, check out our <a
+            href="opening_hours.html" class="text-link">Opening Hours</a> page.</p>
+
+        <h2 class="homepageHeaderText">Contact Us</h2>
+        <p class="homepageText">If you have any questions do not hesitate to <a href="contact_us.html"
+            class="text-link">Contact Us</a>. We are looking forward to meeting you!</p>
+
+        <h2 class="homepageHeaderText">Tips and Tricks</h2>
+        <p class="homepageText">Want to improve your surfing or looking for some fun surfing content? Here are some
+          links
+          on our <a href="tips.html" class="text-link">Tips and Tricks</a> page that you might want to check out.</p>
+      </article>
+    </aside>
+  </section>
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="lessons.html" class="lessons-link">LESSONS</a></li>
+        <li><a href="rental.html" class="rental-link">RENTAL</a></li>
+        <li><a href="opening_hours.html" class="opening_hours-link">OPENING HOURS</a></li>
+        <li><a href="contact_us.html" class="contact_us-link">CONTACT US</a></li>
+        <li><a href="tips.html" class="tips-link">TIPS</a></li>
+        <li><a href="faq.html" class="faq-link">FAQ</a></li>
+      </ul>
+    </nav>
+    <p id="copyrightInfo">&copy;<em>2023 Surfing Cat Surfschool</em></p>
+  </footer>
+
+  <p id="cookie-message">
+    Our website rides the cookie wave for a smoother surf! :) By staying on board, you're cool with that. Surf on!
+    <button id="closeButton">Close</button>
+  </p>
+
+  <script>
+    document.getElementById('closeButton').addEventListener('click', function () {
+      document.querySelector('#cookie-message').style.display = 'none';
+    });
+  </script>
+
+</body>
+
+</html>

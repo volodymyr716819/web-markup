@@ -1,0 +1,439 @@
+@media only screen and (min-width: 768px) {
+  .box {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .top {
+    float: left;
+    position: relative;
+    width: 100%;
+  }
+
+  .bottom {
+    width: 100%;
+    min-width: 900px;
+    margin-top: 20px;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  /* Cookie message styles */
+
+  #cookie-message {
+    position: fixed;
+    background-color: #f9edbe;
+    color: #000000;
+    text-align: center;
+    padding: 10px;
+    z-index: 9999;
+    width: 500px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    border-radius: 15px;
+  }
+
+  #closeButton {
+    background-color: #035A8B;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    border-radius: 15px;
+  }
+
+  #closeButton:hover {
+    background-color: #01456d;
+    color: #c1d7e4;
+  }
+
+  #closeButton:active {
+    background-color: #035A8B;
+    color: #F8EE95;
+  }
+
+  /* Image styles */
+
+  h1 {
+    position: relative;
+    margin: 0;
+    background: url("img\home_page.jpg") no-repeat;
+    width: 100%;
+    height: 821px;
+    letter-spacing: 1px;
+    line-height: 1.3;
+    word-spacing: 0.2em;
+  }
+
+  .homepage-image {
+    display: block;
+    width: 100%;
+  }
+
+  .homepage::before {
+    content: "We are a group of water sports enthusiasts, crazy about ocean and\A freedom. We've been surfing for ages and would like to share this\A incredible experience with other people!\A\A Our school is located on a beautiful beach of Katwijk Aan Zee\A surrounded by wild dunes. With a friendly instructor team and a relaxed\A surfing attitude we are proud to be one of the best surfing schools in\A our region!";
+    position: absolute;
+    text-align: center;
+    max-width: 1030px;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 32px;
+    font-family: "Roboto";
+    font-weight: Bold;
+    color: white;
+    white-space: pre;
+  }
+
+  /* Hide the image for mobile version of the website */
+  .homepage_mobile {
+    display: none;
+  }
+
+  header {
+    min-height: 64px;
+    background-color: #035A8B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .homepageHeaderText,
+  .homepageText {
+    margin-left: 45px;
+    margin-right: 70px;
+  }
+
+  .homepageHeaderText {
+    margin-top: 20px;
+    font-size: 22px;
+    font-family: "Roboto";
+    color: #035A8B;
+  }
+
+  .homepageText {
+    font-family: "Roboto";
+    font-size: 16px;
+    margin-bottom: 30px;
+    text-indent: 0.5em;
+  }
+
+  .text-link {
+    color: #035A8B;
+    font-weight: Bold;
+  }
+
+  .text-link:hover {
+    color: #001b2b;
+  }
+
+  header ul {
+    display: flex;
+    list-style: none;
+  }
+
+  header li {
+    margin-right: 20px;
+  }
+
+  header li > a {
+    font-family: "Roboto";
+    color: white;
+    font-weight: bolder;
+    font-size: 32px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .home-link {
+    color: #F8EE95;
+  }
+
+  /* Footer styles */
+  footer {
+    min-height: 150px;
+    background-color: #035A8B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  footer nav {
+    display: flex;
+    flex-direction: row;
+  }  
+
+  /* Position the copyright text */
+  #copyrightInfo {
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+    color: #F8EE95;
+  }
+
+  footer ul {
+    display: flex;
+    list-style: none;
+  }
+
+  footer li {
+    margin-right: 30px;
+    list-style: none;
+  }
+
+  footer li > a {
+    font-family: "Roboto";
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .box {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .top {
+    float: left;
+    position: relative;
+    width: 100%;
+  }
+
+  .bottom {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #imageCaption {
+    display: none;
+  }
+
+  /* Cookie message styles */
+
+  #cookie-message {
+    position: fixed;
+    background-color: #f9edbe;
+    color: #000000;
+    text-align: center;
+    padding: 10px;
+    z-index: 9999;
+    width: 420px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    border-radius: 15px;
+    font-size: 14px;
+  }
+
+  #closeButton {
+    background-color: #035A8B;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    border-radius: 15px;
+  }
+
+  #closeButton:hover {
+    background-color: #01456d;
+    color: #c1d7e4;
+  }
+
+  #closeButton:active {
+    background-color: #035A8B;
+    color: #F8EE95;
+  }
+
+  h1 {
+    position: relative;
+    margin: 0;
+    background: url("img\home_page_mobile.jpg") no-repeat;
+    width: 100%;
+    height: 500px;
+  }
+
+  .homepage-image {
+    display: block;
+    width: 100%;
+  }
+
+  .homepage_mobile::before {
+    content: "We are a group of water sports enthusiasts, crazy about ocean and\A freedom. We've been surfing for ages and would like to share this\A incredible experience with other people!\A\A Our school is located on a beautiful beach of Katwijk Aan Zee\A surrounded by wild dunes. With a friendly instructor team and a relaxed\A surfing attitude we are proud to be one of the best surfing schools in\A our region!";
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15px;
+    font-family: "Roboto";
+    font-weight: Bold;
+    color: white;
+    white-space: pre;
+  }
+
+  /* Hide the image for mobile version of the website */
+  .homepage {
+    display: none;
+  }
+
+  .homepageHeaderText,
+  .homepageText {
+    margin-left: 45px;
+    margin-right: 70px;
+    width: 90%;
+  }
+
+  .homepageHeaderText {
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: "Roboto";
+    color: #035A8B;
+  }
+
+  .homepageText {
+    font-family: "Roboto";
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  .text-link {
+    color: #035A8B;
+    font-weight: Bold;
+  }
+
+  .text-link:hover {
+    color: #001b2b;
+  }
+
+  /* Header styles */
+  header {
+    min-height: 30px;
+    background-color: #035A8B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header ul {
+    display: flex;
+    list-style: none;
+  }
+
+  header li {
+    margin-right: 20px;
+  }
+
+  header li > a {
+    font-family: "Roboto";
+    color: white;
+    font-weight: bolder;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  /* Highlight current page */
+  .home-link {
+    color: #F8EE95;
+  }
+
+  /* Footer styles */
+  footer {
+    min-height: 60px;
+    background-color: #035A8B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  footer nav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  /* Position the copyright text */
+  #copyrightInfo {
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    color: #F8EE95;
+    font-size: 8px;
+  }
+
+  footer ul {
+    display: flex;
+    list-style: none;
+  }
+
+  footer li {
+    margin-right: 30px;
+    list-style: none;
+  }
+
+  footer li > a {
+    font-family: "Roboto";
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+  }
+}

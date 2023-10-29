@@ -1,0 +1,539 @@
+/* Desktop version */
+@media only screen and (min-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Roboto";
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  /* Box styles */
+  .box {
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+
+  .top {
+    width: 100%;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  .bottom {
+    display: flex;
+    flex-direction: row;
+  }
+
+  /* Changing the first letter of paragraph */
+  p::first-letter {
+    text-transform: uppercase;
+  }
+
+  /* Cookie message styles */
+
+  #cookie-message {
+    position: fixed;
+    background-color: #f9edbe;
+    color: #000000;
+    text-align: center;
+    padding: 10px;
+    z-index: 9999;
+    width: 500px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    border-radius: 15px;
+  }
+
+  #closeButton {
+    background-color: #035A8B;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    border-radius: 15px;
+  }
+
+  #closeButton:hover {
+    background-color: #01456d;
+    color: #c1d7e4;
+  }
+
+  #closeButton:active {
+    background-color: #035A8B;
+    color: #F8EE95;
+  }
+
+  /* The text above form */
+  #formText {
+    font-size: 32px;
+    color: #035A8B;
+    font-weight: Bold;
+    margin-top: 30px;
+    margin-left: 65px;
+  }
+
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 653px;
+    height: 440px;
+    border: solid #035A8B;
+    color: #035A8B;
+    margin-bottom: 20px;
+  }
+
+  /* Remove the border of fieldset */
+  fieldset {
+    border: none;
+  }
+
+  label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  #formLegend {
+    margin-left: 10px;
+    font-size: 14px;
+    padding-top: 5px;
+  }
+
+  #formLegendRequiredExpl {
+    margin-left: 10px;
+    font-size: 12px;
+    padding-top: 5px;
+  }
+
+  label,
+  input,
+  #inputMessage {
+    margin-left: 10px;
+  }
+
+  #lblEmail {
+    text-transform: uppercase;
+  }
+
+  #inputName,
+  #inputPhone,
+  #inputEmail {
+    width: 15em;
+    height: 2.25em;
+    margin-bottom: 1.25em;
+    border: solid #035A8B;
+  }
+
+  #inputMessage {
+    margin-bottom: 10px;
+    width: 620px;
+    height: 75px;
+    border: solid #035A8B;
+  }
+
+  #btnSubmit {
+    background-color: #035A8B;
+    color: white;
+    width: 126px;
+    height: 40px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: Bold;
+  }
+
+  #btnSubmit:hover {
+    background-color: #F8EE95;
+    color: #035A8B;
+  }
+
+  #btnSubmit:active {
+    background-color: #035A8B;
+    color: #F8EE95;
+  }
+
+  ::placeholder {
+    color: #035A8B;
+    opacity: 0.5;
+    padding-left: 5px;
+  }
+
+  /* Highlighting the asterisk symbol */
+  .required {
+    margin-left: 5px;
+    color: red;
+  }
+
+  /* Google Maps Styles */
+  #googleMaps {
+    margin-left: 50px;
+    width: 500px;
+    height: 440px;
+    border: solid #035A8B;
+  }
+
+  /* Header styles */
+  header {
+    min-height: 64px;
+    background-color: #035A8B;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  /* Styles for logo image in the header */
+  #headerLogoImg {
+    width: 65px;
+    height: 65px;
+    margin-left: 30px;
+    margin-right: 20px;
+  }
+
+  header ul {
+    display: flex;
+    list-style: none;
+  }
+
+  header li {
+    margin-right: 20px;
+  }
+
+  header li > a {
+    font-family: "Roboto";
+    color: white;
+    font-weight: bolder;
+    font-size: 32px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .contact_us-link {
+    color: #F8EE95;
+  }
+
+  /* Footer styles */
+  footer {
+    min-height: 150px;
+    background-color: #035A8B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  footer nav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  /* Position the copyright text */
+  #copyrightInfo {
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+    color: #F8EE95;
+  }
+
+  footer ul {
+    display: flex;
+    list-style: none;
+  }
+
+  footer li {
+    margin-right: 30px;
+    list-style: none;
+  }
+
+  footer li > a {
+    font-family: "Roboto";
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+  }
+}
+
+/* Mobile version */
+@media only screen and (max-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Roboto";
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  /* Box styles */
+  .box {
+    padding-left: 20px;
+    padding-top: 10px;
+  }
+
+  .top {
+    width: 100%;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  .bottom {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #cookie-message {
+    position: fixed;
+    background-color: #f9edbe;
+    color: #000000;
+    text-align: center;
+    padding: 10px;
+    z-index: 9999;
+    width: 420px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    border-radius: 15px;
+    font-size: 14px;
+  }
+
+  #closeButton {
+    background-color: #035A8B;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    border-radius: 15px;
+  }
+
+  #closeButton:hover {
+    background-color: #01456d;
+    color: #c1d7e4;
+  }
+
+  #closeButton:active {
+    background-color: #035A8B;
+    color: #F8EE95;
+  }
+
+  /* The text above form */
+  #formText {
+    font-size: 16px;
+    color: #035A8B;
+    font-weight: Bold;
+    margin-top: 30px;
+    margin-left: 40px;
+  }
+
+  /* Form styles */
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 325px;
+    height: 500px;
+    border: solid #035A8B;
+    color: #035A8B;
+    margin-bottom: 20px;
+  }
+
+  #formLegend {
+    margin-left: 15px;
+    margin-right: 12px;
+    font-size: 13px;
+    padding-top: 5px;
+  }
+
+  #formLegendRequiredExpl {
+    margin-left: 15px;
+    font-size: 12px;
+    padding-top: 5px;
+  }
+
+  /* Remove the border of fieldset */
+  fieldset {
+    border: none;
+  }
+
+  label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  label,
+  input,
+  #inputMessage {
+    margin-left: 15px;
+  }
+
+  #inputName,
+  #inputPhone,
+  #inputEmail {
+    width: 200px;
+    height: 35px;
+    margin-bottom: 15px;
+    border: solid #035A8B;
+  }
+
+  #inputMessage {
+    margin-bottom: 10px;
+    width: 290px;
+    height: 85px;
+    border: solid #035A8B;
+  }
+
+  #btnSubmit {
+    background-color: #035A8B;
+    color: white;
+    width: 126px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  #btnSubmit:hover {
+    background-color: #F8EE95;
+    color: #035A8B;
+  }
+
+  #btnSubmit:active {
+    background-color: #035A8B;
+    color: #F8EE95;
+  }
+
+  ::placeholder {
+    color: #035A8B;
+    opacity: 0.5;
+    padding-left: 5px;
+  }
+
+  /* Highlighting the asterisk symbol */
+  .required {
+    margin-left: 5px;
+    color: red;
+  }
+
+  /* Google Maps Styles */
+  #googleMaps {
+    width: 325px;
+    height: 300px;
+    border: solid #035A8B;
+    margin-bottom: 10px;
+  }
+
+  /* Header styles */
+  header {
+    min-height: 30px;
+    background-color: #035A8B;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  /* Styles for logo image in the header */
+  #headerLogoImg {
+    width: 30px;
+    height: 30px;
+    margin-left: 30px;
+    margin-right: 35px;
+  }
+
+
+  header ul {
+    display: flex;
+    list-style: none;
+  }
+
+  header li {
+    margin-right: 20px;
+  }
+
+  header li > a  {
+    font-family: "Roboto";
+    color: white;
+    font-weight: bolder;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .contact_us-link {
+    color: #F8EE95;
+  }
+
+  /* Footer styles */
+  footer {
+    min-height: 60px;
+    background-color: #035A8B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  footer nav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  /* Position the copyright text */
+  #copyrightInfo {
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    color: #F8EE95;
+    font-size: 8px;
+  }
+
+  footer ul {
+    display: flex;
+    list-style: none;
+  }
+
+  footer li {
+    margin-right: 30px;
+    list-style: none;
+  }
+
+  footer li > a  {
+    font-family: "Roboto";
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Volodymyr Gulchenko" />
+  <title>Lessons</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" type="text/css" href="./css/lessons.css" />
+  <link rel="icon" type="image/x-icon" href="img/favicon.png" >
+</head>
+
+<body>
+  <header>
+    <img src="img/logo.png" id="headerLogoImg" alt="Logo" title="Surfing Cat Surfschool Logo">
+    <nav>
+      <ul>
+        <li><a href="homepage.html" class="home-link">HOME</a></li>
+        <li><a href="lessons.html" class="lessons-link">LESSONS</a></li>
+        <li><a href="rental.html" class="rental-link">RENTAL</a></li>
+        <li><a href="opening_hours.html" class="opening_hours-link">OPENING HOURS</a></li>
+        <li><a href="contact_us.html" class="contact_us-link">CONTACT US</a></li>
+        <li><a href="tips.html" class="tips-link">TIPS</a></li>
+        <li><a href="faq.html" class="faq-link">FAQ</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section>
+    <article class="box top">
+      <p>We offer different variety of water sport lessons by reasonable price. We offer surfing lessons starting from 4
+        years old and if you would like to learn kitesurfing, we would recommend being at least 11 years old. See the
+        tables below for lesson information:</p>
+    </article>
+    <article class="box bottom">
+      <table id="tableSurfing">
+        <tr>
+          <th>Lesson Type (Surfing)</th>
+          <th>Price (Euros)</th>
+          <th>Number of people</th>
+        </tr>
+        <tr>
+          <td>Individual</td>
+          <td>&euro;20</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Group (Children)</td>
+          <td>&euro;10 per person</td>
+          <td>3 to 8</td>
+        </tr>
+        <tr>
+          <td>Group (Adults)</td>
+          <td>&euro;15 per person</td>
+          <td>3 to 8</td>
+        </tr>
+        <tr>
+          <td>Family</td>
+          <td>&euro;25</td>
+          <td>2 adults and 1 or more children</td>
+        </tr>
+      </table>
+
+      <table id="tableKitesurfing">
+        <tr>
+          <th>Lesson Type (Kitesurfing)</th>
+          <th>Price (Euros)</th>
+          <th>Number of people</th>
+        </tr>
+        <tr>
+          <td>Individual (11-17 y.o.)</td>
+          <td>&euro;70</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Individual (17+ y.o.)</td>
+          <td>&euro;120</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Group (Adults)</td>
+          <td>&euro;100 per person</td>
+          <td>2</td>
+        </tr>
+      </table>
+    </article>
+  </section>
+
+  <section class="images">
+    <img class="bottom-image" src="img/lessons_image1.png" id="lessons_image1" alt="Surfing Image" title="Surfing Image 1">
+    <img class="bottom-image" src="img/lessons_image2.png" id="lessons_image2" alt="Surfing Image" title="Surfing Image 2">
+    <img class="bottom-image" src="img/lessons_image3.png" id="lessons_image3" alt="Kitesurfing Image" title="Kitesurfing Image 1">
+    <img class="bottom-image" src="img/lessons_image4.png" id="lessons_image4" alt="Kitesurfing Image" title="Kitesurfing Image 2">
+  </section>
+
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="lessons.html" class="lessons-link">LESSONS</a></li>
+        <li><a href="rental.html" class="rental-link">RENTAL</a></li>
+        <li><a href="opening_hours.html" class="opening_hours-link">OPENING HOURS</a></li>
+        <li><a href="contact_us.html" class="contact_us-link">CONTACT US</a></li>
+        <li><a href="tips.html" class="tips-link">TIPS</a></li>
+        <li><a href="faq.html" class="faq-link">FAQ</a></li>
+      </ul>
+    </nav>
+    <p id="copyrightInfo">&copy;2023 Surfing Cat Surfschool</p>
+  </footer>
+
+  <p id="cookie-message">
+    Our website rides the cookie wave for a smoother surf! :) By staying on board, you're cool with that. Surf on!
+    <button id="closeButton">Close</button>
+  </p>
+
+  <script>
+    document.getElementById('closeButton').addEventListener('click', function () {
+      document.querySelector('#cookie-message').style.display = 'none';
+    });
+  </script>
+
+</body>
+
+</html>

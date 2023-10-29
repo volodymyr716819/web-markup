@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Volodymyr Gulchenko" />
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" type="text/css" href="./css/contact_us.css" />
+  <link rel="icon" type="image/x-icon" href="img/favicon.png" />
+</head>
+
+<body>
+  <header>
+    <img src="img/logo.png" id="headerLogoImg" alt="Banner Image" title="Surfing Cat Surfschool Logo">
+    <nav>
+      <ul>
+        <li><a href="homepage.html" class="home-link">HOME</a></li>
+        <li><a href="lessons.html" class="lessons-link">LESSONS</a></li>
+        <li><a href="rental.html" class="rental-link">RENTAL</a></li>
+        <li><a href="opening_hours.html" class="opening_hours-link">OPENING HOURS</a></li>
+        <li><a href="contact_us.html" class="contact_us-link">CONTACT US</a></li>
+        <li><a href="tips.html" class="tips-link">TIPS</a></li>
+        <li><a href="faq.html" class="faq-link">FAQ</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section>
+    <article class="box top">
+      <p>phone/WhatsApp: <strong>+31 2345678</strong></p>
+      <p>e-mail: <strong>surfingcatschool@gmail.com</strong></p>
+      <p>location: <strong>Google Maps</strong></p>
+      <p id="formText">Have more questions? Contact Us!</p>
+    </article>
+    <article class="box bottom">
+      <form method="post" id="form01">
+        <fieldset>
+          <legend id="formLegend">Fill those fields for us to understand how we could help you and contact you back.</legend>
+          <p id="formLegendRequiredExpl">(all fields marked with<span class="required">*</span> are obligatory)</p>
+          <label for="inputName" id="lblName">Your name <span class="required">*</span></label>
+          <input type="text" id="inputName" name="name" placeholder="Ben" required>
+          <label for="inputPhone" id="lblPhone">Phone number <span class="required">*</span></label>
+          <input type="text" id="inputPhone" name="phone" placeholder="+31 2345678" required>
+          <label for="inputEmail" id="lblEmail">Email <span class="required">*</span></label>
+          <input type="email" id="inputEmail" name="email" placeholder="surfingcatschool@gmail.com" required>
+          <label for="inputMessage" id="lblMessage">What can we help you with? <span class="required">*</span></label>
+          <textarea name="message" id="inputMessage" cols="50" rows="4"
+            placeholder="I would like to sign up for a surfing lesson." required></textarea>
+          <input type="submit" value="Submit" id="btnSubmit">
+        </fieldset>
+      </form>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2445.875954300834!2d4.376678295688237!3d52.191127456648964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTLCsDExJzIyLjQiTiA0wrAyMic0MS4wIkU!5e0!3m2!1sen!2snl!4v1698492840440!5m2!1sen!2snl"
+        id="googleMaps" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </article>
+  </section>
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="lessons.html" class="lessons-link">LESSONS</a></li>
+        <li><a href="rental.html" class="rental-link">RENTAL</a></li>
+        <li><a href="opening_hours.html" class="opening_hours-link">OPENING HOURS</a></li>
+        <li><a href="contact_us.html" class="contact_us-link">CONTACT US</a></li>
+        <li><a href="tips.html" class="tips-link">TIPS</a></li>
+        <li><a href="faq.html" class="faq-link">FAQ</a></li>
+      </ul>
+    </nav>
+    <p id="copyrightInfo">&copy;2023 Surfing Cat Surfschool</p>
+  </footer>
+
+  <p id="cookie-message">
+    Our website rides the cookie wave for a smoother surf! :) By staying on board, you're cool with that. Surf on!
+    <button id="closeButton">Close</button>
+  </p>
+
+  <script>
+    document.getElementById('closeButton').addEventListener('click', function () {
+      document.querySelector('#cookie-message').style.display = 'none';
+    });
+  </script>
+
+</body>
+
+</html>

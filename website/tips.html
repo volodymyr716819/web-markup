@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Volodymyr Gulchenko" />
+  <title>Tips</title>
+  <link rel="stylesheet" type="text/css" href="./css/tips.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sansita">
+  <link rel="icon" type="image/x-icon" href="img/favicon.png" >
+</head>
+
+<body>
+  <header>
+    <img src="img/logo.png" id="headerLogoImg" alt="Logo" title="Surfing Cat Surfschool Logo">
+    <nav>
+      <ul>
+        <li><a href="homepage.html" class="home-link">HOME</a></li>
+        <li><a href="lessons.html" class="lessons-link">LESSONS</a></li>
+        <li><a href="rental.html" class="rental-link">RENTAL</a></li>
+        <li><a href="opening_hours.html" class="opening_hours-link">OPENING HOURS</a></li>
+        <li><a href="contact_us.html" class="contact_us-link">CONTACT US</a></li>
+        <li><a href="tips.html" class="tips-link">TIPS</a></li>
+        <li><a href="faq.html" class="faq-link">FAQ</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section>
+    <article class="box top">
+      <iframe id="video1" src="https://www.youtube.com/embed/PBmijBB57Go?si=8dE67375z3oyAwet"
+        title="YouTube video player" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+      <iframe id="video2" src="https://www.youtube.com/embed/qMeMKyJDWxA?si=mQEfS4MWJnhBT8zd"
+        title="YouTube video player" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </article>
+    <article class="box bottom">
+      <iframe id="video3" src="https://www.youtube.com/embed/7CM7jDSBuJ8?si=XOm4EPQVg-uZO5tk"
+        title="YouTube video player" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+      <iframe id="video4" src="https://www.youtube.com/embed/9rz-ucDwjVU?si=FOSIVPKfb26Si-jm"
+        title="YouTube video player" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </article>
+  </section>
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="lessons.html" class="lessons-link">LESSONS</a></li>
+        <li><a href="rental.html" class="rental-link">RENTAL</a></li>
+        <li><a href="opening_hours.html" class="opening_hours-link">OPENING HOURS</a></li>
+        <li><a href="contact_us.html" class="contact_us-link">CONTACT US</a></li>
+        <li><a href="tips.html" class="tips-link">TIPS</a></li>
+        <li><a href="faq.html" class="faq-link">FAQ</a></li>
+      </ul>
+    </nav>
+    <p id="copyrightInfo">&copy;2023 Surfing Cat Surfschool</p>
+  </footer>
+
+  <p id="cookie-message">
+    Our website rides the cookie wave for a smoother surf! :) By staying on board, you're cool with that. Surf on!
+    <button id="closeButton">Close</button>
+  </p>
+
+  <script>
+    document.getElementById('closeButton').addEventListener('click', function () {
+      document.querySelector('#cookie-message').style.display = 'none';
+    });
+  </script>
+
+</body>
+
+</html>

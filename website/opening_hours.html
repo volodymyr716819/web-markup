@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Volodymyr Gulchenko" />
+  <title>Opening Hours</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" type="text/css" href="./css/opening_hours.css" />
+  <link rel="icon" type="image/x-icon" href="img/favicon.png" >
+</head>
+
+<body>
+  <header>
+    <img src="img/logo.png" id="headerLogoImg" alt="Logo" title="Surfing Cat Surfschool Logo">
+    <nav>
+      <ul>
+        <li><a href="homepage.html" class="home-link">HOME</a></li>
+        <li><a href="lessons.html" class="lessons-link">LESSONS</a></li>
+        <li><a href="rental.html" class="rental-link">RENTAL</a></li>
+        <li><a href="opening_hours.html" class="opening_hours-link">OPENING HOURS</a></li>
+        <li><a href="contact_us.html" class="contact_us-link">CONTACT US</a></li>
+        <li><a href="tips.html" class="tips-link">TIPS</a></li>
+        <li><a href="faq.html" class="faq-link">FAQ</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section>
+    <article class="box top">
+      <h1 class="opening-hours"><img src="img/opening_hours.png" id="topimg" class="banner-image"
+          alt="Banner Image" title="Banner Image"></h1>
+    </article>
+    <article class="box bottom">
+      <p id="opening_hours_text">The school is open from 1st May till the end of September. Outside of this period the
+        water can be too cold for beginner lessons, but we are really flexible and can meet on your request! During the
+        season we are open seven days a week, you can find the timetable below:</p>
+      <table id="tableOpeningHours">
+        <tr>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+          <th>Thursday</th>
+          <th>Friday</th>
+          <th>Saturday</th>
+          <th>Sunday</th>
+        </tr>
+        <tr>
+          <td>10:00-18:00</td>
+          <td>10:00-18:00</td>
+          <td>10:00-18:00</td>
+          <td>10:00-18:00</td>
+          <td>10:00-18:00</td>
+          <td>10:00-18:00</td>
+          <td>10:00-18:00</td>
+        </tr>
+      </table>
+      <table id="tableOpeningHoursMobile">
+        <tr>
+          <th>Monday</th>
+          <td>14:00-18:00</td>
+        </tr>
+        <tr>
+          <th>Tuesday</th>
+          <td>10:00-18:00</td>
+        </tr>
+        <tr>
+          <th>Wednesday</th>
+          <td>10:00-18:00</td>
+        </tr>
+        <tr>
+          <th>Thursday</th>
+          <td>10:00-20:00</td>
+        </tr>
+        <tr>
+          <th>Friday</th>
+          <td>10:00-18:00</td>
+        </tr>
+        <tr>
+          <th>Saturday</th>
+          <td>10:00-20:00</td>
+        </tr>
+        <tr>
+          <th>Sunday</th>
+          <td>10:00-18:00</td>
+        </tr>
+      </table>
+    </article>
+  </section>
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="lessons.html" class="lessons-link">LESSONS</a></li>
+        <li><a href="rental.html" class="rental-link">RENTAL</a></li>
+        <li><a href="opening_hours.html" class="opening_hours-link">OPENING HOURS</a></li>
+        <li><a href="contact_us.html" class="contact_us-link">CONTACT US</a></li>
+        <li><a href="tips.html" class="tips-link">TIPS</a></li>
+        <li><a href="faq.html" class="faq-link">FAQ</a></li>
+      </ul>
+    </nav>
+    <p id="copyrightInfo">&copy;2023 Surfing Cat Surfschool</p>
+  </footer>
+
+  <p id="cookie-message">
+    Our website rides the cookie wave for a smoother surf! :) By staying on board, you're cool with that. Surf on!
+    <button id="closeButton">Close</button>
+  </p>
+
+  <script>
+    document.getElementById('closeButton').addEventListener('click', function () {
+      document.querySelector('#cookie-message').style.display = 'none';
+    });
+  </script>
+
+</body>
+
+</html>

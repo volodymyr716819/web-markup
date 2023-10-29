@@ -1,0 +1,452 @@
+@media only screen and (min-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .box {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .top,
+  .bottom {
+    width: 100%;
+  }
+
+  /* Cookie message styles */
+
+  #cookie-message {
+    position: fixed;
+    background-color: #f9edbe;
+    color: #000000;
+    text-align: center;
+    padding: 10px;
+    z-index: 9999;
+    width: 500px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    border-radius: 15px;
+  }
+
+  #closeButton {
+    background-color: #035A8B;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    border-radius: 15px;
+  }
+
+  #closeButton:hover {
+    background-color: #01456d;
+    color: #c1d7e4;
+  }
+
+  #closeButton:active {
+    background-color: #035A8B;
+    color: #F8EE95;
+  }
+
+  .bottom p {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 95%;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  table#tableOpeningHours {
+    font-family: "Roboto";
+    font-size: 14px;
+    border-collapse: collapse;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+  }
+
+  table#tableOpeningHours th {
+    background-color: lightgray;
+  }
+
+  table#tableOpeningHours td,
+  table#tableOpeningHours th {
+    border: 1px solid #b4b4b4;
+    text-align: center;
+    padding: 8px;
+    min-width: 171px;
+  }
+
+  table#tableOpeningHoursMobile {
+    display: none;
+  }
+
+  h1 {
+    margin: 0;
+    background: url("img\opening_hours.png") no-repeat;
+    width: 100%;
+    height: 670px;
+  }
+
+  .banner-image {
+    display: block;
+    width: 100%;
+  }
+
+  .opening-hours::before {
+    content: "Opening Hours";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 64px;
+    font-family: "Roboto";
+    font-weight: Bold;
+    color: white;
+    text-shadow: 1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  }
+
+  #opening_hours_text {
+    font-size: 20px;
+  }
+
+  /* Header styles */
+  header {
+    min-height: 64px;
+    background-color: #035A8B;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  /* Styles for logo image in the header */
+  #headerLogoImg {
+    width: 65px;
+    height: 65px;
+    margin-left: 30px;
+    margin-right: 20px;
+  }
+
+  header ul {
+    display: flex;
+    list-style: none;
+  }
+
+  header li {
+    margin-right: 20px;
+  }
+
+  header li > a {
+    font-family: "Roboto";
+    color: white;
+    font-weight: bolder;
+    font-size: 32px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .opening_hours-link {
+    color: #F8EE95;
+  }
+
+  /* Footer styles */
+  footer {
+    min-height: 150px;
+    background-color: #035A8B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  footer nav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  /* Position the copyright text */
+  #copyrightInfo {
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+    color: #F8EE95;
+  }
+
+  footer ul {
+    display: flex;
+    list-style: none;
+  }
+
+  footer li {
+    margin-right: 30px;
+    list-style: none;
+  }
+
+  footer li > a {
+    font-family: "Roboto";
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #cookie-message {
+    position: fixed;
+    background-color: #f9edbe;
+    color: #000000;
+    text-align: center;
+    padding: 10px;
+    z-index: 9999;
+    width: 420px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    border-radius: 15px;
+    font-size: 14px;
+  }
+
+  #closeButton {
+    background-color: #035A8B;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    border-radius: 15px;
+  }
+
+  .banner-image {
+    display: block;
+    width: 100%;
+  }
+
+  #closeButton:hover {
+    background-color: #01456d;
+    color: #c1d7e4;
+  }
+
+  #closeButton:active {
+    background-color: #035A8B;
+    color: #F8EE95;
+  }
+
+  .box {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .top,
+  .bottom {
+    width: 100%;
+  }
+
+  .bottom p {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 95%;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  /* Styles for mobile version of the table */
+  table#tableOpeningHoursMobile {
+    font-family: "Roboto";
+    font-size: 14px;
+    border-collapse: collapse;
+    width: 50%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+  }
+
+  table#tableOpeningHoursMobile tr {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  table#tableOpeningHoursMobile td,
+  table#tableOpeningHoursMobile th {
+    border: 1px solid #b4b4b4;
+    text-align: left;
+    padding: 8px;
+    min-width: 50px;
+    display: block;
+    flex: 1;
+  }
+
+  table#tableOpeningHoursMobile td {
+    text-align: center;
+  }
+
+  /* Hides desktop version of the table */
+  table#tableOpeningHours {
+    display: none;
+  }
+
+  /* Styles for the top image */
+  h1 {
+    margin: 0;
+    background: url("img\opening_hours.png") no-repeat;
+    width: 100%;
+    height: 400px;
+  }
+
+  .opening-hours::before {
+    content: "Opening Hours";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    font-family: "Roboto";
+    font-weight: Bold;
+    color: white;
+    text-shadow: 1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  }
+
+  #opening_hours_text {
+    font-size: 20px;
+  }
+
+  /* Header styles */
+  header {
+    min-height: 30px;
+    background-color: #035A8B;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  /* Styles for logo image in the header */
+  #headerLogoImg {
+    width: 30px;
+    height: 30px;
+    margin-left: 30px;
+    margin-right: 35px;
+  }
+
+
+  header ul {
+    display: flex;
+    list-style: none;
+  }
+
+  header li {
+    margin-right: 20px;
+  }
+
+  header li > a {
+    font-family: "Roboto";
+    color: white;
+    font-weight: bolder;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  /* Highlight current page */
+  .opening_hours-link {
+    color: #F8EE95;
+  }
+
+  /* Footer styles */
+  footer {
+    min-height: 60px;
+    background-color: #035A8B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  footer nav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  /* Position the copyright text */
+  #copyrightInfo {
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    color: #F8EE95;
+    font-size: 8px;
+  }
+
+  footer ul {
+    display: flex;
+    list-style: none;
+  }
+
+  footer li {
+    margin-right: 30px;
+    list-style: none;
+  }
+
+  footer li > a {
+    font-family: "Roboto";
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+  }
+}
